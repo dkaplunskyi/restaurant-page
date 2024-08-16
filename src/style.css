@@ -17,7 +17,7 @@ body {
 }
 
 header {
-  height: 20vh;
+  height: calc(100px + 2vh);
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
