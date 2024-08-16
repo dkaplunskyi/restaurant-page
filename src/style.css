@@ -40,8 +40,6 @@ nav {
 }
 
 nav button {
-  /* padding: 10px 20px; */
-  /* border-radius: 10px; */
   color: azure;
   font-size: 1rem;
   border: none;
@@ -63,8 +61,7 @@ nav button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
-  /* Full viewport height */
+  height: calc(93vh - 100px);
 }
 
 #content div {
@@ -72,4 +69,15 @@ nav button:hover {
   width: 600px;
   font-size: 2rem;
   font-family: my-font;
+}
+
+footer {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: azure;
+  font-size: 0.8rem;
+  font-family: cursive;
 }
