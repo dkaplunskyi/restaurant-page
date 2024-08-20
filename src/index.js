@@ -1,6 +1,7 @@
 import './style.css';
 import { home_page } from './home.js';
 import { menu_page } from './menu.js';
+import { about_page } from './about.js'
 
 const content = document.querySelector('#content');
 content.append(home_page);
@@ -22,6 +23,12 @@ buttons.forEach(btn => {
         clearPage();
         toggleActiveBtn(btn);
         content.append(menu_page);
+        break;
+
+      case 'about':
+        clearPage();
+        toggleActiveBtn(btn);
+        content.append(about_page);
         break;
 
       default:

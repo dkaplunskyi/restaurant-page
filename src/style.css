@@ -44,7 +44,7 @@ body {
 }
 
 #header .logo img {
-  max-width: fit-content;
+  width: 40%;
 }
 
 #header nav button {
@@ -89,8 +89,8 @@ body {
 }
 
 #content .menu-page .item {
-
   border-radius: 15px;
+  box-shadow: 0px 4px 5px 1px #000000;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   font-family: my-font;
@@ -102,14 +102,14 @@ body {
   border-top-left-radius: 15px;
 }
 
-#content .menu-page .wrapper {  
+#content .menu-page .wrapper {
   padding: 0 20px 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-#content .menu-page .price{
+#content .menu-page .price {
   font-family: math;
 }
 
@@ -125,7 +125,7 @@ body {
   font-size: 0.7rem;
 }
 
-.active{
+.active {
   text-decoration: underline;
   text-underline-offset: 7px;
 }

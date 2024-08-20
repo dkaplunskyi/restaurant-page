@@ -3,6 +3,7 @@ import saladImgSrc_2 from '../images/salad-2.jpg';
 import saladImgSrc_3 from '../images/salad-3.jpg';
 import saladImgSrc_4 from '../images/salad-4.jpg';
 import saladImgSrc_5 from '../images/salad-5.jpg';
+import saladImgSrc_6 from '../images/salad-6.jpg';
 
 class Salad {
   constructor(name, about, src, price) {
@@ -19,6 +20,7 @@ const greekSalad = new Salad('Greek', 'A Greek salad is a vibrant and refreshing
 const capreseSalad = new Salad('Caprese', 'A Caprese salad is a simple yet elegant Italian dish that highlights the freshness of its ingredients. It consists of ripe tomatoes and fresh mozzarella cheese, both sliced into rounds and arranged in an alternating pattern. Fresh basil leaves are interspersed between the tomato and mozzarella slices, adding a fragrant and flavorful element to the salad.', saladImgSrc_3, '$13');
 const cobbSalad = new Salad('Cobb', 'A Cobb salad is a hearty American salad that combines a variety of flavors and textures. It traditionally includes a base of mixed greens, such as romaine, iceberg lettuce, and watercress. On top of the greens, a variety of ingredients are arranged in neat rows or sections. These typically include diced grilled or roasted chicken breast, crispy bacon, hard-boiled eggs, avocado, tomatoes, and crumbled blue cheese.', saladImgSrc_4, '$17');
 const waldorfSalad = new Salad('Waldorf', 'A Waldorf salad is a classic American salad that offers a delightful mix of sweet and savory flavors. It was originally created in the late 19th century at the Waldorf-Astoria Hotel in New York City. The salad traditionally consists of fresh, crisp apples and crunchy celery, both chopped into bite-sized pieces. These are mixed with juicy grapes and walnuts, which add a sweet and nutty flavor.', saladImgSrc_5, '$11');
+const italianChoppedSalad = new Salad('Italian Chopped Salad', 'An Italian chopped salad is a vibrant and flavorful dish that brings together a variety of fresh and savory ingredients, all finely chopped for easy eating. The salad typically starts with a base of crisp romaine lettuce, sometimes mixed with radicchio or other greens.', saladImgSrc_6, '$22');
 
 function createMenuElement(obj) {
   const item = document.createElement('div');
@@ -49,12 +51,13 @@ const greek = createMenuElement(greekSalad);
 const caprese = createMenuElement(capreseSalad);
 const cobb = createMenuElement(cobbSalad);
 const waldord = createMenuElement(waldorfSalad);
+const italian = createMenuElement(italianChoppedSalad);
 
 
 const menu_page = document.createElement('div');
 menu_page.classList.add('menu-page');
 
-menu_page.append(caesar, greek, caprese, cobb, waldord);
+menu_page.append(caesar, greek, caprese, cobb, waldord, italian);
 
 
 export { menu_page };
